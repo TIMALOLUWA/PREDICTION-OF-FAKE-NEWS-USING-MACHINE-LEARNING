@@ -3,10 +3,10 @@ import joblib
 
 # Load the model
 model = joblib.load('Real-Fake')
-st.title('PREDICTION OF FAKE NEWS USING MACHINE LEARNING ALGORITHMS')
+st.title('Prediction Of Fake News Using Machine Learning Algorithms')
 
 # user input
-ip = st.text_area("Enter your news content here", "Some news",height=200)
+ip = st.text_area("Enter the news content here :", height=200)
 st.subheader('Note: ')
 st.caption('The input format should be : (title of the news) - (text)')
 
