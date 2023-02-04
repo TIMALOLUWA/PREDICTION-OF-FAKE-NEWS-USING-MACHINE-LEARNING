@@ -3,7 +3,7 @@ import joblib
 
 # Load the model
 model = joblib.load('Real-Fake')
-st.title('Real-Fake News Detection')
+st.title('PREDICTION OF FAKE NEWS USING MACHINE LEARNING ALGORITHMS')
 
 # user input
 ip = st.text_area("Enter your news content here", "Some news",height=200)
