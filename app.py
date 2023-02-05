@@ -3,9 +3,6 @@ import joblib
 
 # Load the model
 model = joblib.load('Real-Fake')
-
-st.beta_container(style={"background-color": "#F0F8FF"})
-
 st.title('Prediction Of Fake News Using Machine Learning Algorithms')
 
 # user input
