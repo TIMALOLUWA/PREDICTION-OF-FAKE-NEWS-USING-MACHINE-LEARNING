@@ -3,6 +3,9 @@ import joblib
 
 # Load the model
 model = joblib.load('Real-Fake')
+
+st.beta_container(style={"background-color": "#F0F8FF"})
+
 st.title('Prediction Of Fake News Using Machine Learning Algorithms')
 
 # user input
@@ -14,4 +17,3 @@ st.caption('The input format should be : (title of the news) - (text)')
 op = model.predict([ip])
 if st.button('Predict'):
   st.title(op[0])
-
